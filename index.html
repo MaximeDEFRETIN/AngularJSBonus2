@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" /> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<title>Exercice2</title>
+<body ng-app="alert">
+  <input type="button" value="alert" ng-click="show=true">
+  <span ng-show="show" ng-controller="personCtrl">
+    {{text}}
+  </span>
+  <script>
+  var app = angular.module('alert', []);
+  app.controller('personCtrl', function($scope) {
+        return $scope.text = "SBLÈÈÈÈÈ !";
+      });
+  </script>
+</body>
+</html>
